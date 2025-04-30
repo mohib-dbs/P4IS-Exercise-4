@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> Exercise-4 </title>
+        <script>
+          const a=document.getElementById('an').value;
+          const b=document.getElementById('bn').value;
+          const n=[2,4,6,7,8,9,14,23,25,26,27,80,14,8,60];
+          function sum(){
+            let d=0;
+
+            for (let i=1;i<length(n);i++){
+              if (n[i]%a===0 || [i]%b===0){
+                d+=i;
+                }
+              }
+            console.log(d);
+            alert("The sum of all multiples of "+ a +" or "+b+" below "+n+" is: "+d);
+            document.getElementById('result').textContent = ("The sum of multiples of "+ a +" or "+ b +" up to the array "+ n +" is: " + d);
+          }
+        </script>
+    </head>
+    <body>
+      <p>Enter A,B, N to find the sum of multiples of A or B below N:</p>
+      <p>Input A: <input type="number" id="an"></p>
+      <p>Input B: <input type="number" id="bn"></p>
+      <button onclick='sum()'>Submit</button>
+      <p id="result"></p>
+    </body>
+</html>
