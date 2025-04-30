@@ -2,15 +2,16 @@
     <head>
         <title> Exercise-4 </title>
         <script>
-          const a=document.getElementById('an').value;
-          const b=document.getElementById('bn').value;
-          const n=[2,4,6,7,8,9,14,23,25,26,27,80,14,8,60];
+          
           function sum(){
             let d=0;
-
-            for (let i=1;i<length(n);i++){
-              if (n[i]%a===0 || [i]%b===0){
-                d+=i;
+            const a=document.getElementById('an').value;
+            const b=document.getElementById('bn').value;
+            const n=[2,4,6,7,8,9,14,23,25,26,27,80,60,9,25];
+            for (let i=0;i<n.length;i++){
+              if (n[i]%a===0 || n[i]%b===0){
+                console.log(n[i]);
+                d+=n[i];
                 }
               }
             console.log(d);
